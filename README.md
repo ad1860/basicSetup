@@ -1,4 +1,4 @@
-# basic setup
+# basicSetup
 
 
 # PHP setup (windows)
