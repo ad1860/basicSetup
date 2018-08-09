@@ -30,8 +30,18 @@ class Data
 
     }
 
-    public static function generateRegisterInfo() {
+    public static function generateRegisterInfo($details) {
+        $data = array();
+//        switch ($details) {
 
+//            default:
+                $data['firstname'] = "test";
+                $data['lastname'] = self::generateRandomString();
+                $data['email_address'] = self::generateRandomEmail();
+                $data['password'] = "123123Aqaz-";
+                $data['password-confirmation'] = "123123Aqaz-";
+//        }
+        return $data;
     }
 
     public static function generateNews() {
@@ -40,5 +50,13 @@ class Data
 
     public static function getSearchTerm($search_term) {
         return $search_term;
+    }
+
+    public static function getEmail() {
+        return "testuser1@mailinator.com";
+    }
+
+    public static function getPassword() {
+        return "123123Aqaz-";
     }
 }

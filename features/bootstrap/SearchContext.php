@@ -21,7 +21,7 @@ class SearchContext implements Context
     }
 
     /**
-     * @Then the search page should contain :breadcrumb with search term
+     * @Then /^the search page should contain (.*)$/
      */
     public function theSearchPageShouldContainBreadcrumbWithSearchTerm()
     {

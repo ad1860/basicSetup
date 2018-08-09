@@ -4,6 +4,7 @@ default:
       contexts:
         - FeatureContext
         - SearchContext
+        - AccountContext
   formatters:
     pretty:
     junit:
