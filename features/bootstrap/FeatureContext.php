@@ -38,16 +38,16 @@ class FeatureContext extends BehatFormatterContext implements Context
 //        }
 //    }
 //
-//    public function takeScreenshotAfterFailedStep(AfterStepScope $scope)
-//    {
-//        if (getenv('BROWSERSTACK_USER') !== false){
-//            return;
-//        }
-//
-//        if (99 === $scope->getTestResult()->getResultCode()) {
-//            $this->takeScreenshot();
-//        }
-//    }
+    public function afterStepScreenShotOnFailure(AfterStepScope $scope)
+    {
+        if (getenv('BROWSERSTACK_USER') !== false){
+            return;
+        }
+
+        if (99 === $scope->getTestResult()->getResultCode()) {
+            $this->takeScreenshot();
+        }
+    }
 
     private function takeScreenshot()
     {
