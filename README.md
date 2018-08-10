@@ -51,4 +51,7 @@ toAdd
 `bin/behat -h` - behat help, shows all available commands and options
 
 
+cat suiteRuns.txt | parallel {}
+
+
 https://blogs.msdn.microsoft.com/hpctrekker/2013/03/30/preparing-and-uploading-datasets-for-hdinsight/
