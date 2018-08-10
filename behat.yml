@@ -33,7 +33,6 @@ default:
       projectName: Training
       name: html
       renderer: Behat2
-      file_name: index
       print_args: true
       print_outp: true
       loop_break: true

@@ -1,4 +1,4 @@
-@javascript @insulated @search
+@javascript @insulated @search @c
 Feature: Search
 
 

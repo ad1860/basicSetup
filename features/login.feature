@@ -1,4 +1,4 @@
-@insulated @javascript
+@insulated @javascript @b
 Feature: Login
   # user story / short description
 

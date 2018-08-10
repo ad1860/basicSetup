@@ -54,4 +54,7 @@ toAdd
 cat suiteRuns.txt | parallel {}
 
 
+export BEHAT_PARAMS=$(cat browser/$BROWSER.json)
+
+
 https://blogs.msdn.microsoft.com/hpctrekker/2013/03/30/preparing-and-uploading-datasets-for-hdinsight/

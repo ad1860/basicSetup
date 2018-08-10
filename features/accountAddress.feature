@@ -1,4 +1,4 @@
-@javascript @insulated @address
+@javascript @insulated @address @a
 Feature: Account address book
 
 
