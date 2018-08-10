@@ -49,3 +49,6 @@ toAdd
 `bin/behat --story-syntax` - prints a story syntax sample
 
 `bin/behat -h` - behat help, shows all available commands and options
+
+
+https://blogs.msdn.microsoft.com/hpctrekker/2013/03/30/preparing-and-uploading-datasets-for-hdinsight/

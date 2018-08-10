@@ -1,0 +1,21 @@
+{
+  "extensions": {
+    "Behat\\MinkExtension": {
+      "sessions": {
+        "browserstack": {
+          "browser_stack": {
+            "capabilities": {
+              "os": "Windows",
+              "os_version": "7",
+              "browser": "Chrome",
+              "browserVersion": "64.0",
+              "resolution": "1600x1200",
+              "acceptSslCerts": true,
+              "browserstack-debug": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

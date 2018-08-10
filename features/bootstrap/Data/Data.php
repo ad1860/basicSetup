@@ -59,4 +59,20 @@ class Data
     public static function getPassword() {
         return "123123Aqaz-";
     }
+
+    public static function getAdminCredentials() {
+        return ['user' => 'admin', 'password' => 'nublue2test'];
+    }
+
+    public static function generateAddress() {
+        $data = [];
+
+        $data['telephone'] = "1231231";
+        $data['street_1'] = self::generateRandomString();
+        $data['city'] = "my city";
+        $data['region'] = "California";
+        $data['zip'] = "12345";
+        $data['country'] = "Zambia";
+        return $data;
+    }
 }

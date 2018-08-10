@@ -16,4 +16,8 @@ class Search extends BasePage
     public function theBreadcrumbsHasSearchTerm() {
         $this->assertHasText($this->term, ".breadcrumbs .search strong");
     }
+
+    public function hasNoSearchResults() {
+        $this->assertIsVisible("#maincontent .message.notice");
+    }
 }

@@ -13,7 +13,7 @@ class SearchContext implements Context
     }
 
     /**
-     * @When I search for :luma
+     * @When /^I search for (.*)$/
      */
     public function iSearchForLuma($term)
     {
@@ -23,9 +23,16 @@ class SearchContext implements Context
     /**
      * @Then /^the search page should contain (.*)$/
      */
-    public function theSearchPageShouldContainBreadcrumbWithSearchTerm()
+    public function theSearchPageShouldContainBreadcrumbWithSearchTerm($validation)
     {
-        $this->search->theBreadcrumbsHasSearchTerm();
+        switch ($validation) {
+            case "no search results warning":
+                $this->search->hasNoSearchResults();
+                break;
+            default:
+                $this->search->theBreadcrumbsHasSearchTerm();
+        }
+
     }
 
 }

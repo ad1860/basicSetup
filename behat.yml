@@ -5,6 +5,7 @@ default:
         - FeatureContext
         - SearchContext
         - AccountContext
+        - MagentoApiContext
   formatters:
     pretty:
     junit:
